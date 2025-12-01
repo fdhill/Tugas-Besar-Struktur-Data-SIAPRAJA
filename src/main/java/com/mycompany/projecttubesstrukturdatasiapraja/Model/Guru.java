@@ -4,6 +4,8 @@
  */
 package com.mycompany.projecttubesstrukturdatasiapraja.Model;
 
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeUser;
+
 /**
  *
  * @author Pongo
@@ -11,7 +13,7 @@ package com.mycompany.projecttubesstrukturdatasiapraja.Model;
 public class Guru {
     int id;
     String nama, alamat, jenis_kelamin, nip;
-    User user_id;
+    NodeUser user_id;
 
     public Guru(String nama, String alamat, String jenis_kelamin, String nip) {
         this.nama = nama;
@@ -60,11 +62,11 @@ public class Guru {
         this.nip = nip;
     }
 
-    public User getUser_id() {
+    public NodeUser getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(User user_id) {
+    public void setUser_id(NodeUser user_id) {
         this.user_id = user_id;
     }
     

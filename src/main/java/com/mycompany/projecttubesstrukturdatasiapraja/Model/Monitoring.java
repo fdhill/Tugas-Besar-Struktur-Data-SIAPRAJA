@@ -4,18 +4,22 @@
  */
 package com.mycompany.projecttubesstrukturdatasiapraja.Model;
 
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeGuru;
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeInstansi;
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeSiswa;
+
 /**
  *
  * @author Pongo
  */
 public class Monitoring {
     int id;
-    Siswa siswa_id;
-    Guru guru_id;
-    Instansi instansi_id;
+    NodeSiswa siswa_id;
+    NodeGuru guru_id;
+    NodeInstansi instansi_id;
     String tanggal_mulai, tanggal_selesai;
 
-    public Monitoring(Siswa siswa_id, Guru guru_id) {
+    public Monitoring(NodeSiswa siswa_id, NodeGuru guru_id) {
         this.siswa_id = siswa_id;
         this.guru_id = guru_id;
     }
@@ -28,28 +32,28 @@ public class Monitoring {
         this.id = id;
     }
 
-    public Siswa getSiswa_id() {
+    public NodeSiswa getSiswa_id() {
         return siswa_id;
     }
 
-    public void setSiswa_id(Siswa siswa_id) {
+    public void setSiswa_id(NodeSiswa siswa_id) {
         this.siswa_id = siswa_id;
     }
 
-    public Guru getGuru_id() {
+    public NodeGuru getGuru_id() {
         return guru_id;
     }
 
-    public void setGuru_id(Guru guru_id) {
+    public void setGuru_id(NodeGuru guru_id) {
         this.guru_id = guru_id;
     }
 
-    public Instansi getInstansi_id() {
+    public NodeInstansi getInstansi_id() {
         return instansi_id;
     }
 
-    public void setInstansi_id(Instansi instansi_id) {
-        this.instansi_id = instansi_id;
+    public void setInstansi_id(NodeInstansi instansi) {
+        this.instansi_id = instansi;
     }
 
     public String getTanggal_mulai() {

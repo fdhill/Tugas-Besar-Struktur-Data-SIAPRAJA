@@ -18,4 +18,20 @@ public class NodePresensi {
         this.data = data;
         next = null;
     }
+
+    public Presensi getData() {
+        return data;
+    }
+
+    public void setData(Presensi data) {
+        this.data = data;
+    }
+
+    public NodePresensi getNext() {
+        return next;
+    }
+
+    public void setNext(NodePresensi next) {
+        this.next = next;
+    }
 }

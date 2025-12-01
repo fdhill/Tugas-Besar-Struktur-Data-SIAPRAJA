@@ -4,6 +4,8 @@
  */
 package com.mycompany.projecttubesstrukturdatasiapraja.Model;
 
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeMonitoring;
+
 /**
  *
  * @author Pongo
@@ -11,9 +13,9 @@ package com.mycompany.projecttubesstrukturdatasiapraja.Model;
 public class Presensi {
     int id, status;
     String tanggal, jam_masuk, jam_keluar, keterangan, lokasi;
-    Monitoring monitoring_id;
+    NodeMonitoring monitoring_id;
 
-    public Presensi(String tanggal, String jam_masuk, String keterangan, String lokasi, Monitoring monitoring_id) {
+    public Presensi(String tanggal, String jam_masuk, String keterangan, String lokasi, NodeMonitoring monitoring_id) {
         this.tanggal = tanggal;
         this.jam_masuk = jam_masuk;
         this.keterangan = keterangan;
@@ -77,11 +79,11 @@ public class Presensi {
         this.lokasi = lokasi;
     }
 
-    public Monitoring getMonitoring_id() {
+    public NodeMonitoring getMonitoring_id() {
         return monitoring_id;
     }
 
-    public void setMonitoring_id(Monitoring monitoring_id) {
+    public void setMonitoring_id(NodeMonitoring monitoring_id) {
         this.monitoring_id = monitoring_id;
     }
 }

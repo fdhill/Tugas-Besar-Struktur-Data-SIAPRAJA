@@ -4,34 +4,34 @@
  */
 package com.mycompany.projecttubesstrukturdatasiapraja.Node;
 
-import com.mycompany.projecttubesstrukturdatasiapraja.Model.Guru;
+import com.mycompany.projecttubesstrukturdatasiapraja.Model.User;
 
 /**
  *
  * @author Pongo
  */
-public class NodeGuru {
-    Guru data;
-    NodeGuru next;
+public class NodeUser {
+    User data;
+    NodeUser next;
 
-    public NodeGuru(Guru data) {
+    public NodeUser(User data) {
         this.data = data;
         next = null;
     }
 
-    public Guru getData() {
+    public User getData() {
         return data;
     }
 
-    public void setData(Guru data) {
+    public void setData(User data) {
         this.data = data;
     }
 
-    public NodeGuru getNext() {
+    public NodeUser getNext() {
         return next;
     }
 
-    public void setNext(NodeGuru next) {
+    public void setNext(NodeUser next) {
         this.next = next;
     }
 }

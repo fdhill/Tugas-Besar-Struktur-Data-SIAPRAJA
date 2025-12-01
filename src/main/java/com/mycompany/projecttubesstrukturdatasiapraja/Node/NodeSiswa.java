@@ -11,8 +11,8 @@ import com.mycompany.projecttubesstrukturdatasiapraja.Model.Siswa;
  * @author Pongo
  */
 public class NodeSiswa{
-    public Siswa data;
-    public NodeSiswa next;
+    Siswa data;
+    NodeSiswa next;
 
     public NodeSiswa(Siswa data) {
         this.data = data;

@@ -18,4 +18,20 @@ public class NodeMonitoring {
         this.data = data;
         next = null;
     }
+
+    public Monitoring getData() {
+        return data;
+    }
+
+    public void setData(Monitoring data) {
+        this.data = data;
+    }
+
+    public NodeMonitoring getNext() {
+        return next;
+    }
+
+    public void setNext(NodeMonitoring next) {
+        this.next = next;
+    }
 }

@@ -8,6 +8,6 @@ package com.mycompany.projecttubesstrukturdatasiapraja.DataSource;
  *
  * @author Pongo
  */
-public class Presensi {
+public class DataSourcePresensi {
     
 }

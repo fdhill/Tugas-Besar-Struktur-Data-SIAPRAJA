@@ -18,4 +18,20 @@ public class NodeInstansi {
         this.data = data;
         next = null;
     }
+
+    public Instansi getData() {
+        return data;
+    }
+
+    public void setData(Instansi data) {
+        this.data = data;
+    }
+
+    public NodeInstansi getNext() {
+        return next;
+    }
+
+    public void setNext(NodeInstansi next) {
+        this.next = next;
+    }
 }

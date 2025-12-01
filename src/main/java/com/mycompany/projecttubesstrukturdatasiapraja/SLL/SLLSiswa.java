@@ -5,7 +5,10 @@
 package com.mycompany.projecttubesstrukturdatasiapraja.SLL;
 
 import com.mycompany.projecttubesstrukturdatasiapraja.Model.Siswa;
+import com.mycompany.projecttubesstrukturdatasiapraja.Model.User;
 import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeSiswa;
+import com.mycompany.projecttubesstrukturdatasiapraja.Node.NodeUser;
+import java.util.ArrayList;
 
 /**
  *
@@ -30,7 +33,7 @@ public class SLLSiswa implements ISLL<Siswa>{
     }
 
     @Override
-    public void update(Siswa data, int id) {
+    public void edit(Siswa data, int id) {
         NodeSiswa current = head;
         
         if(current == null){
@@ -39,17 +42,49 @@ public class SLLSiswa implements ISLL<Siswa>{
         while (current.getData().getId() != id) {            
             current = current.getNext();
         }
-        current.setData(data);
-        
+        current.setData(data);    
     }
 
     @Override
     public Siswa SearchById(int id) {
         NodeSiswa current = head;
         
-        while (current.getData().getId() != id) {            
+        while (current.getData().getId() != id) { 
+            if(current.getData().getId() == id){
+                return current.getData();
+            }
             current = current.getNext();
         }
-        return current.getData();
+        return null;
+    }
+    
+    public void setUser(int idGuru, NodeUser nodeuser){
+        NodeSiswa current = head;
+        
+        if(current == null){
+            return;
+        }
+        while (current.getData().getId() != idGuru) {            
+            current = current.getNext();
+        }
+        current.getData().setUserr_id(nodeuser);
+    }
+    
+    public ArrayList<NodeSiswa> getAll(){
+        NodeSiswa current = head;
+        ArrayList<NodeSiswa> siswa = new ArrayList<>();
+        
+        if(current == null){
+            return null;
+        }
+        while(current != null){
+            siswa.add(current);
+            current = current.getNext();
+        }
+        return siswa;
+    }
+    
+    public NodeSiswa getHead(){
+        return head;
     }
 }
